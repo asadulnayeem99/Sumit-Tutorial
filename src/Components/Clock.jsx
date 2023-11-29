@@ -20,12 +20,17 @@ class Clock extends React.Component {
       date: new Date(),
     });
   }
-
+  handleClick() {
+    console.log("clicked");
+  }
   render() {
     return (
-      <h1>
-        <span>{this.state.date.toLocaleTimeString(this.props.locale)}</span>
-      </h1>
+      <>
+        <h1>
+          <span>{this.state.date.toLocaleTimeString(this.props.locale)}</span>
+        </h1>
+        <button onClick={this.handleClick}></button>
+      </>
     );
   }
 }

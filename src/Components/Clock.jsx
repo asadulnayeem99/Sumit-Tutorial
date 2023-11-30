@@ -36,7 +36,7 @@ class Clock extends React.Component {
     });
   };
   render() {
-    console.log("clock");
+    // console.log("clock");
     const { date, locale } = this.state;
     let button;
     if (locale === "bn-BD") {

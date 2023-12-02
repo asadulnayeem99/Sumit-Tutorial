@@ -1,11 +1,17 @@
-import Emoji from "./Composition//Emoji";
+import Bracket from "./Composition/Bracket";
+import Emoji from "./Composition/Emoji";
 import Text from "./Composition/Text";
-
 function App() {
   return (
-    <>
-      <Emoji>{(addEmoji) => <Text addEmoji={addEmoji} />}</Emoji>
-    </>
+    <Emoji>
+      {({ addEmoji }) => (
+        <Bracket>
+          {({ addBracket }) => (
+            <Text addEmoji={addEmoji} addBracket={addBracket} />
+          )}
+        </Bracket>
+      )}
+    </Emoji>
   );
 }
 

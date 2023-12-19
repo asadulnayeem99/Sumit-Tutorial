@@ -8,9 +8,9 @@ const Card = () => {
   return (
     <CardContainer>
       <ContentContainer>
-        <Tag color="#4361eee">EXCLUSIVE</Tag>
+        <Tag color="#4361ee">EXCLUSIVE</Tag>
         <H1>
-          <StyledTitle text="React Style" color="#000" />
+          <StyledTitle text="React Style" color="#fff" />
         </H1>
         <P>
           Exclusive React Js Tutorial based on Styled Components learn why we

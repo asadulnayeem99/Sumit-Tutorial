@@ -9,7 +9,7 @@ export const Tag = styled.span`
   border-radius: 50px;
   font-size: 0.7em;
 `;
-export const H1 = styled.span`
+export const H1 = styled.h1`
   color: #fff;
 `;
 export const P = styled.p`
